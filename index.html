@@ -8,7 +8,39 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+            details>summary {
+ 
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none
+}
+
+summary::after {
+  content: ' ►';
+}
+details[open] summary:after {
+  content: " ▼";
+}
+img {
+  margin: 10px;
+}
+
+a:link {
+  color:dodgerblue;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(59, 59, 255);
+}
+
+/* mouse over link */
+a:hover {
+  color: cornflowerblue;
+}
 </style>
+
 <body class="w3-light-grey">
 
 <!-- Page Container -->
@@ -28,26 +60,19 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           </div>
         </div>
         <div class="w3-container">
-          
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue"></i>Pavia, Italy</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue"></i>ex@mail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue"></i>1224435534</p>
+          <p class="w3-large  w3-text-blue"><b>Contact information</b></p>
+          <p>🏠 &nbsp Pavia, Italy</p>
+          <p>📧 &nbsp bianca.sangiovanni93@gmail.com</p>
           <hr>
 
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue"></i>Skills</b></p>
-          <p>Entry1</p>
-          
-          <p>Entry2</p>
-          
-          <p>Entry2</p>
-          
-          <p>Entry3</p>
-          
+          <p class="w3-large  w3-text-blue"><b>Areas of interest</b></p>
+          <p>Robotics, automation, deep learning, reinforcement learning, process control</p>
+                    
           <br>
 
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue"></i>Languages</b></p>
-          <p>Italian</p>
-          <p>English</p>
+          <p class="w3-large w3-text-blue"><b>Languages</b></p>
+          <p>🇮🇹 &nbsp; Italian</p>
+          <p>🇬🇧 &nbsp; English</p>
 
           <br>
         </div>
@@ -58,50 +83,135 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- Right Column -->
     <div class="w3-twothird">
-    
+      <!-- About me -->
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>About Me</h2>
+        <h2 class="w3-text-grey w3-padding-16">📇 &nbsp; About Me</h2>
         <div class="w3-container">
           
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
+          <p>Hi! Welcome to my personal webpage 👋 I'm Bianca, here you can find some information about me. I currently live in Italy, and I have recently obtained my Ph.D. in Robot Control from the University of Pavia (Italy), under the supervision of Professor Antonella Ferrara. As a Ph.D. student, I focused my reseach on the topics of robotics and reinforcement learning. My Ph.D. thesis, titled "Self-configuring Robotic Systems: the use of Deep Reinforcement Learning as a tool for Industrial Manipulators" specifically deals with potential applications of deep learning in the context of decision-making and control for robotic systems. During the course of my doctoral studies I had the opportunity to work with incredibly brilliant researchers from all around the world and enrich my knowledge in the fields of machine learning, control and identification of complex dynamical models, as well as improve my coding and simulation skills (more details <a href="#skills">here</a>). Furthermore, I had the privilege to mentor students for their master projects, hold seminars and lectures for the faculty, and present at national and international conferences. You can check out my complete list of peer-reviewed publications on my <a href="https://scholar.google.it/citations?user=5gxYF9kAAAAJ&hl=en"><b>Google Scholar profile</b></a>.</p>
+
+          <p>Previously, I completed my Bachelor and Master degrees in Computer Engineering also from the University of Pavia, with a specialization in Embedded and Control Systems. </p>
+
+          <p>In my free time, I enjoy listening to podcasts, watching documentaries, and playing around with game developement tools. 
+
+          </p>
+
+
           <hr>
         </div>
         
       </div>
+	
 
+    
+    <!-- Academic and professional experience -->
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <h2 class="w3-text-grey w3-padding-16">🏛️ &nbsp; Academic and Professional Experience</h2>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Ph.D. School in Electronics, Computer Science and Electrical Engineering</b></h5>
+        <h6 class="w3-opacity">University of Pavia, Italy</h6>
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017-2021</h6>
+        <p><b>Research area:</b> robot control, deep reinforcement learning, collaborative robotics, human-robot interaction, automation</p>
+        <p><b>Thesis title:</b> Self-configuring Robotic Systems: the use of Deep Reinforcement Learning as a tool for Industrial Manipulators  <a href="https://iris.unipv.it/retrieve/handle/11571/1436277/470499/Sangiovanni_PhD_Thesis_final.pdf"><i class="fa fa-download w3-text-blue w3-hover-opacity"></i></a> (pdf)</p>
+        <p><b>Advisor:</b> Professor Antonella Ferrara</p>
+
+        <details><summary><b>Abstract</b></summary>
+          <p>The Thesis aims to present different examples of self-configuring systems involving robotic manipulators. 
+            With self-configuring systems, we refer to systems featuring the ability to autonomously adapt their control strategy or general configuration in order to overcome possible limitations encountered during their operation. To this end, the use of Deep Reinforcement Learning (DRL), a type of machine learning that enables the system to autonomously discover the best strategy to solve a task, is discussed as a tool for decision making or for controlling robotic systems in situations in which a model-based solution is not readily achievable. End-to-End, model-free control approaches are studied and used contextually with - or alternatively to - model-based control and decision strategies. Specifically, the work focuses on industrial manipulators operating in uncertain environments to perform motion and collision avoidance tasks.
+            
+            For robot motion, a novel switched-structure scheme to achieve both centralized and decentralized control, using the perturbation estimation feature of the Integral Sliding Mode controller, is presented and discussed in detail. Different approaches for decision-making are illustrated.
+            
+            For collision avoidance, a framework enabling end-to-end, model-free control of robotic manipulators operating in cluttered environments is introduced and tested on several case studies. A novel hybrid algorithm combining DRL-based strategies and conventional planning methods is proposed. The presented approaches are then deployed on different robotic systems, and experimental results are reported.</p></details>
+            <hr>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Visiting Researcher</b></h5>
+        <h6 class="w3-opacity">University of Zurich/ETH, Switzerland</h6>
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>March - September 2019</h6>
+                <p><b>Activity:</b> Visiting period during my Ph.D. at the Robotics and Perception Group, Institute of Neuroinformatics (University of Zurich and ETH Zurich). I collaborated to research projects in the area of aerial robotics and deep learning.</p>
+                <hr>
+              </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Teaching Activity</b></h5>
+        <h6 class="w3-opacity">University of Pavia, Italy</h6>
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2020</h6>
+                <p><b>Activity:</b> lectures on motion planning for industrial robotics to graduate students for the M.Sc. course Robot Control (Prof. Antonella Ferrara); tutoring and assistance to undergraduate students for the B.Sc. course Automatic Control (Prof. Lalo Magni, Prof. Chiara Toffanin) </p>
+                <hr>
+              </div>
+    </div>
+    <div class="w3-container w3-card w3-white w3-margin-bottom">
+      <h2 class="w3-text-grey w3-padding-16"> &#127891 &nbsp; Education</h2>
+
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Master's Degree in Computer Engineering</b></h5>
+        <h6 class="w3-opacity">University of Pavia, Italy</h6>
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
+                <p><b>Title:</b> Virtualization, simulation and automatic training for robotic systems</p>
+        <p><b>Advisors:</b> Professor Antonella Ferrara, Professor Marco Piastra</p>
+
+        <details><summary><b>Abstract</b></summary>
+          <p>The Thesis investigates the process of virtualization and simulation of industrial robotic systems, in the field of collaborative robotics. A virtual environment consisting of a robot manipulator working in the presence of moving obstacles is used to test the performance of a model-free Deep Reinforcement Learning algorithm for collision avoidance, producing promising results.</p></details>
+        <hr>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>Bachelor's Degree in Computer Engineering</b></h5>
+        <h6 class="w3-opacity">University of Pavia, Italy</h6>
+        <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2015</h6>
+        <p><b>Title:</b> Revamping of a laboratory plant for level control</p>
+        <p><b>Advisor:</b> Professor Lalo Magni</p>
+
+        <details><summary><b>Abstract</b></summary>
+          <p>The Thesis reports the laboratory activity for the revamping of an hydraulic plant, used in the undergraduate courses of Automatic Control and Fundamentals of Control Theory.</p></details>
+          <hr>
+      </div>
+    </div>
+
+	<!-- Research -->
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Publications</h2>
+        <h2 class="w3-text-grey w3-padding-16">🔬 &nbsp; Research</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Journal</b></h5>
+          <h5 class="w3-opacity"><b>Robot Collision Avoidance with Deep Reinforcement Learning</b></h5>
+            <img src="assets\scenariomultiobst.png" style="float:left; width:230px; border: 1px solid #000; box-shadow: 3px 3px 2px #00000090">
+            <p> A novel approach based on DRL, which allows end-to-end, model-free control of a robot operating in a cluttered environment was developed to perform collision avoidance of moving obstacles. After defining the best suitable reinforcement learning framework, which produced promising results in terms of task completion and performance, the effects of the so-called transfer learning applied to different considered scenarios; several robotic settings, operating under different conditions, were reproduced in simulation and used to validate the proposed control approach.
+              In addition to the end-to-end strategy, a hybrid dual-mode algorithm that combines conventional motion planning techniques and DRL-based control was introduced. The proposed solution aims to improve the tracking performances of the robot manipulator while allowing model-free control for collision avoidance. A switching metric, which confers self-configuring capabilities to the considered robotic system, is used to define the best possible approach. This allowed to obtain a more reliable motion of the manipulator and deploy the proposed approach to a real system.</p>
+              <p>🎬 <a href="http://bit.ly/CH11_HYBRID">Video</a></p>
+              <details><summary><b>Publications on the topic</b></summary>
+                <ul>
+                  <li>B. Sangiovanni, A. Rendiniello, G.P. Incremona, A. Ferrara, and M. Piastra. <i>Deep reinforcement learning for collision avoidance of robotic manipulators.</i> In 2018 16th European Control Conference (ECC), pages 2063–2068. Lymassol, Cyprus, July 2018. <a href="https://scholar.google.it/citations?view_op=view_citation&hl=en&user=5gxYF9kAAAAJ&citation_for_view=5gxYF9kAAAAJ:u-x6o8ySG0sC"><i class="fa fa-external-link-square w3-text-blue w3-hover-opacity"></i></a>
+                  </li> 
+                  <li>B. Sangiovanni, G. P. Incremona, M. Piastra, and A. Ferrara. <i>Self-configuring robot path planning with obstacle avoidance via deep reinforcement learning.</i> IEEE Control Systems Letters, 5(2), pages 397–402, 2021. <a href="https://scholar.google.it/citations?view_op=view_citation&hl=en&user=5gxYF9kAAAAJ&citation_for_view=5gxYF9kAAAAJ:qjMakFHDy7sC"><i class="fa fa-external-link-square w3-text-blue w3-hover-opacity"></i></a>
+                  </li>
+                </ul> </details>
+
           <hr>
         </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Conference proceedings</b></h5>
+          <h5 class="w3-opacity"><b>Switched-structure Motion Control For Industrial Manipulators </b></h5>
+          <img src="assets\switched.png" style="float:left; width:230px; border: 1px solid #000; box-shadow: 3px 3px 2px #00000090">
+          <p> A novel switched structure control scheme based on Integral Sliding Mode control was designed to allows on-line change between a centralized approach and a decentralized one, in order to control the motion of a robot manipulator. The approach has been tested on different types of manipulators, characterised by different types of uncertainties regarding their dynamical model. The same switched-structure control scheme has then been adapted in order to enable online decision-making with an agent trained with DRL. The proposed approach aims to bypass an a-priori choice of the control scheme for systems operating in uncertain environments, with variable working conditions. </p>
+          <details><summary><b>Publications on the topic</b></summary>
+            <ul><li>A. Ferrara, G.P. Incremona, and B. Sangiovanni. <i>Integral sliding mode based switched structure control scheme for robot manipulators</i>. In 2018 15th International Workshop on Variable Structure Systems (VSS), pages 168–173. Graatz, Austria, 2018. <a href="https://scholar.google.it/citations?view_op=view_citation&hl=en&user=5gxYF9kAAAAJ&citation_for_view=5gxYF9kAAAAJ:u5HHmVD_uO8C"><i class="fa fa-external-link-square w3-text-blue w3-hover-opacity"></i></a>
+            </li> 
+            <li>B. Sangiovanni, G.P. Incremona, A. Ferrara, and M. Piastra. <i>Deep reinforcement Learning based self-configuring integral sliding mode control scheme for robot manipulators</i>. In 2018 57th IEEE Conference on Decision and Control (CDC), pages 5969–5974, Miami Beach (FL), USA, December 2018. <a href="https://scholar.google.it/citations?view_op=view_citation&hl=en&user=5gxYF9kAAAAJ&citation_for_view=5gxYF9kAAAAJ:d1gkVwhDpl0C"><i class="fa fa-external-link-square w3-text-blue w3-hover-opacity"></i></a></li>
+            <li>A. Ferrara, G.P. Incremona, and B. Sangiovanni. <i>Tracking control via switched integral sliding mode with application to robot manipulators</i>. Control Engineering Practice, 90, pages 257–266, 2019. <a href="https://scholar.google.it/citations?view_op=view_citation&hl=en&user=5gxYF9kAAAAJ&citation_for_view=5gxYF9kAAAAJ:9yKSN-GCB0IC"><i class="fa fa-external-link-square w3-text-blue w3-hover-opacity"></i></a></li>  
+            </ul> </details>
+
+
           <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Book Chapters</b></h5>
         </div>
       </div>
-      
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue"></i>Education</h2>
+
+      <div id="skills" class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16">🛠️ &nbsp; Technical Skills</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Phd</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017-2021</h6>
-          <p>University of Pavia</p>
+          <p><b>Research areas:</b> robot control, reinforcement learning, deep learning, automation </p>
+          <p><b>Programming languages:</b> Python, C/C++, Java, Lua, Matlab</p>
+          <p><b>Simulation and calculation:</b> Matlab, Simulink, robotic simulators (V-Rep, Epson RC+, ROS), machine learning libraries (PyTorch, Keras, Scikit-learn), data processing libraries (Numpy, Pandas) </p>
+          <p><b>Web technologies:</b> HTML, CSS, Markdown</p>
+          <p><b>Productivity:</b> Microsoft Office Suite, Google Workspace, Open Office, LATEX </p>
+          <p><b>Graphics and multimedia:</b> illustration and graphics editing (Inkscape, GIMP), 3D modelling (Blender, Cinema4D), video and auto editing</p>
+
           <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Master Degree</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015 - 2017</h6>
-          <p>University of Pavia</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Bachelor Degree</b></h5>
-          <h6 class="w3-text-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2015</h6>
-          <p>University of Pavia</p><br>
         </div>
       </div>
 
@@ -115,13 +225,6 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </div>
 
 <footer class="w3-container w3-blue w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
